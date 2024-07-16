@@ -1,4 +1,4 @@
-### Pattern : 
+### Level 01 : 
 
 The challenge utilized knowledge of Unix-like system files (/etc/passwd and /etc/shadow) and password hashing.
 
@@ -50,6 +50,8 @@ The default shell for the user.
 
 ### Focus on the DES Part: 42hDRfypTqqnw
 
+---
+
 Why Focus on the DES Part?
 
 *  Historical Password Storage:
@@ -60,17 +62,17 @@ Why Focus on the DES Part?
 
 > Even though storing passwords directly in /etc/passwd is outdated and insecure, challenges like these might use this method to simulate older systems or specific security scenarios.
 
----
 
 ## Password Cracking :
 
 ---
  
-Tools like John the Ripper can crack password hashes, which is often part of these security challenges.
+> Tools like John the Ripper can crack password hashes, which is often part of these security challenges.
 
----
 
 ### Cracking the DES Hash:
+
+---
 
 > Use a password cracking tool like John the Ripper to crack the DES hash and retrieve the plaintext password.
 
@@ -83,4 +85,21 @@ john --show flag01_hash.txt
 
 ### Result :
 
+---
+
 > John the Ripper outputs the cracked password: abcdefg.
+
+
+### Go to next level :
+
+---
+
+```bash
+$ su flag01
+$ Password: abcdef
+$  getflag
+$ Check flag.Here is your token :  f2av5il02puano7naaf6adaaf
+$ su level02
+$ Password: f2av5il02puano7naaf6adaaf
+```
+
