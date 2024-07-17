@@ -68,15 +68,14 @@ $ sudo -l
 ---
 
 ```bash
-level00@SnowCrash:~$  find / -type f -user flag00 2>&1 | grep -v "Permission denied"
-find: `/proc/2174/task/2174/fd/5': No such file or directory
-find: `/proc/2174/task/2174/fdinfo/5': No such file or directory
-find: `/proc/2174/fd/5': No such file or directory
-find: `/proc/2174/fdinfo/5': No such file or directory
-/usr/sbin/john
-/rofs/usr/sbin/john
-
+$ find / -type f -user flag00 2>/dev/null
+$ /usr/sbin/john
+$ /rofs/usr/sbin/john
+$ cat /user/sbin/john
+$ cdiiddwpgswtgt
 ```
+
+* 2>/dev/null : redirect stderr to /dev/null device to discard unwanted output!
 
 > therefore we cat the file /usr/sbin/john, its content is : cdiiddwpgswtgt , and we use this website [link](https://www.cachesleuth.com/multidecoder/) to decrypt it
 
@@ -96,7 +95,7 @@ nottoohardhere
 ```bash
 $ su flag00
 $ Password: nottoohardhere
-$  getflag
+$ getflag
 $ Check flag.Here is your token : x24ti5gi3x0ol2eh4esiuxias 
 $ su level01
 $ Password: x24ti5gi3x0ol2eh4esiuxias

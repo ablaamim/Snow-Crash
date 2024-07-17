@@ -1,1 +1,1 @@
- find / -type f -user flag00 2>&1 | grep -v "Permission denied"
+ find / -type f -user flag00 2>/dev/null

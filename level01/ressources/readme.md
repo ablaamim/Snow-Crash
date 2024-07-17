@@ -1,5 +1,20 @@
 ### Level 01 : 
 
+* First i tried ls -la, find / searching method, id as well nothing suspecious outputs.
+
+```bash
+$ ls -la && id && pwd
+uid=3000(flag00) gid=3000(flag00) groups=3000(flag00),1001(flag)
+total 16
+dr-x------ 1 flag00 flag00  120 Aug 30  2015 .
+d--x--x--x 1 root   flag    340 Aug 30  2015 ..
+-r-x------ 1 flag00 flag00  220 Apr  3  2012 .bash_logout
+-r-x------ 1 flag00 flag00 3551 Aug 30  2015 .bashrc
+-r-x------ 1 flag00 flag00  675 Apr  3  2012 .profile
+-r-x------ 1 flag00 flag00   33 Aug 30  2015 README.txt
+/home/flag/flag00
+```
+
 The challenge utilized knowledge of Unix-like system files (/etc/passwd and /etc/shadow) and password hashing.
 
 ## Security Measures: 
