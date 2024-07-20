@@ -20,6 +20,12 @@ in order to spot them and avoid them.
 This project is a modest introduction to the wide world of cyber security. A world
 where you’ll have no margin for errors.
 
+</p>
+<p align="center">
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXBzcWQ4cm5oYXg2eHdmamc1bDNubmRieGZhN3p0cnQ4Mmtud3B1ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ocEgeHuUkuC5TGjyOE/giphy.webp" width="800">
+</p>
+
+
 ---
 
 ### Objectives :
